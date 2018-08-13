@@ -1,0 +1,28 @@
+.brand{
+  font-weight: bold;
+  color: #dbbbf5;
+  text-shadow: #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px,
+             #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px;
+
+}
+.navbar{
+  background-color: #acf7c1;
+}
+iframe{
+  padding-top: 15rem;
+}
+.navbar a{
+  color: #fff;
+}
+
+footer{
+  background-color: #acf7c1;
+  align-items: center;
+}
+
+.social{
+  background-color: #3acec2;
+}
+.main-footer{
+  align-items: center;
+}

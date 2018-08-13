@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+  <div class="row keys"> <!-- START top ROW -->
+    <div data-key="81" class="key">
+      <kbd>Q</kbd>
+      <span class="sound">wave</span>
+    </div>
+
+    <div data-key="87" class="key">
+      <kbd>W</kbd>
+      <span class="sound">bottle rocket</span>
+    </div>
+
+    <div data-key="69" class="key">
+      <kbd>E</kbd>
+      <span class="sound">Burp</span>
+    </div>
+
+    <div data-key="82" class="key">
+      <kbd>R</kbd>
+      <span class="sound">Cheer</span>
+    </div>
+
+    <div data-key="84" class="key">
+      <kbd>T</kbd>
+      <span class="sound">Splash</span>
+    </div>
+
+    <div data-key="89" class="key">
+      <kbd>Y</kbd>
+      <span class="sound">Whistle</span>
+    </div>
+
+    <div data-key="85" class="key">
+      <kbd>U</kbd>
+      <span class="sound">Gunshot</span>
+    </div>
+
+    <div data-key="73" class="key">
+      <kbd>I</kbd>
+      <span class="sound">Fart</span>
+    </div>
+
+    <div data-key="79" class="key">
+      <kbd>O</kbd>
+      <span class="sound">Clap</span>
+    </div>
+
+    <div data-key="80" class="key">
+      <kbd>P</kbd>
+      <span class="sound">Flush</span>
+    </div>
+  </div> <!-- END top ROW -->
+
+
+
+<div class="row keys"> <!-- START HOME ROW -->
+  <div data-key="65" class="key">
+    <kbd>A</kbd>
+    <span class="sound">boom</span>
+  </div>
+
+  <div data-key="83" class="key">
+    <kbd>S</kbd>
+    <span class="sound">clap</span>
+  </div>
+
+  <div data-key="68" class="key">
+    <kbd>D</kbd>
+    <span class="sound">hihat</span>
+  </div>
+
+  <div data-key="70" class="key">
+    <kbd>F</kbd>
+    <span class="sound">kick</span>
+  </div>
+
+  <div data-key="71" class="key">
+    <kbd>G</kbd>
+    <span class="sound">openhat</span>
+  </div>
+
+  <div data-key="72" class="key">
+    <kbd>H</kbd>
+    <span class="sound">ride</span>
+  </div>
+
+  <div data-key="74" class="key">
+    <kbd>J</kbd>
+    <span class="sound">snare</span>
+  </div>
+
+  <div data-key="75" class="key">
+    <kbd>K</kbd>
+    <span class="sound">tink</span>
+  </div>
+
+  <div data-key="76" class="key">
+    <kbd>L</kbd>
+    <span class="sound">tom</span>
+  </div>
+</div> <!-- END HOME ROW -->
+
+<div class="keys"> <!-- START BOTTOM ROW -->
+  <div data-key="90" class="key">
+    <kbd>Z</kbd>
+    <span class="sound">Laser</span>
+  </div>
+
+  <div data-key="88" class="key">
+    <kbd>X</kbd>
+    <span class="sound">Downer</span>
+  </div>
+
+  <div data-key="67" class="key">
+    <kbd>C</kbd>
+    <span class="sound">Yoda</span>
+  </div>
+
+  <div data-key="86" class="key">
+    <kbd>V</kbd>
+    <span class="sound">Napoleon</span>
+  </div>
+
+  <div data-key="66" class="key">
+    <kbd>B</kbd>
+    <span class="sound">Light Saber</span>
+  </div>
+
+  <div data-key="78" class="key">
+    <kbd>N</kbd>
+    <span class="sound">Pac Man</span>
+  </div>
+
+  <div data-key="77" class="key">
+    <kbd>M</kbd>
+    <span class="sound">Napoleon</span>
+  </div>
+
+</div> <!-- END BOTTOM ROW -->
+
+<!-- START TOP ROW SOUNDS-->
+<audio data-key="81" src="wav/beachwave.wav"></audio>
+<audio data-key="87" src="wav/skyrocket.wav"></audio>
+<audio data-key="69" src="wav/burp.wav"></audio>
+<audio data-key="82" src="wav/cheer_hooter.wav"></audio>
+<audio data-key="84" src="wav/splash.wav"></audio>
+<audio data-key="89" src="wav/factorywhistlE.wav"></audio>
+<audio data-key="85" src="wav/bomb_03.wav"></audio>
+<audio data-key="73" src="wav/fart.wav"></audio>
+<audio data-key="79" src="wav/applause_moderate.wav"></audio>
+<audio data-key="80" src="wav/sink_empty.wav"></audio>
+<!-- END TOP ROW SOUNDS-->
+
+<!-- START BOTTOM ROW SOUNDS-->
+<audio data-key="90" src="wav/blaster-firing.mp3"></audio>
+<audio data-key="88" src="wav/Sad_Trombone.wav"></audio>
+<audio data-key="67" src="wav/yodalaughing.mp3"></audio>
+<audio data-key="86" src="wav/nap-ddang.mp3"></audio>
+<audio data-key="66" src="wav/light-saber-off.mp3"></audio>
+<audio data-key="78" src="wav/Ms_Pacman_Death.wav"></audio>
+<audio data-key="77" src="wav/nap-luucky.mp3"></audio>
+<!-- END BOTTOM ROW SOUNDS-->
+
+<!-- START HOME ROW SOUNDS -->
+<audio data-key="65" src="wav/boom.wav"></audio>
+<audio data-key="83" src="wav/clap.wav"></audio>
+<audio data-key="68" src="wav/hihat.wav"></audio>
+<audio data-key="70" src="wav/kick.wav"></audio>
+<audio data-key="71" src="wav/openhat.wav"></audio>
+<audio data-key="72" src="wav/ride.wav"></audio>
+<audio data-key="74" src="wav/snare.wav"></audio>
+<audio data-key="75" src="wav/tink.wav"></audio>
+<audio data-key="76" src="wav/tom.wav"></audio>
+<!-- END HOME ROW SOUNDS -->
+<script>
+window.addEventListener('keydown', function (e) {
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+  if (!audio) return;
+  audio.currentTime = 0;
+  audio.play();
+  key.classList.add('playing');
+});
+
+function removeTransition(e) {
+  if(e.propertyName !== 'transform') return;
+
+  this.classList.remove('playing');
+}
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend',removeTransition));
+
+</script>
+
+
+</body>
+</html>

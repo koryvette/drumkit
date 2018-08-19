@@ -12,52 +12,62 @@
 
   <div class="row keys"> <!-- START top ROW -->
     <div data-key="81" class="key">
-      <kbd>Q</kbd>
+      <button type="button"><kbd>Q</kbd></button>
+      <br>
       <span class="sound">wave</span>
     </div>
 
     <div data-key="87" class="key">
-      <kbd>W</kbd>
+      <button type="button"><kbd>W</kbd></button>
+      <br>
       <span class="sound">bottle rocket</span>
     </div>
 
     <div data-key="69" class="key">
-      <kbd>E</kbd>
+      <button type="button"><kbd>E</kbd></button>
+      <br>
       <span class="sound">Burp</span>
     </div>
 
     <div data-key="82" class="key">
-      <kbd>R</kbd>
+      <button type="button"><kbd>R</kbd></button>
+      <br>
       <span class="sound">Cheer</span>
     </div>
 
     <div data-key="84" class="key">
-      <kbd>T</kbd>
+      <button type="button"><kbd>T</kbd></button>
+      <br>
       <span class="sound">Splash</span>
     </div>
 
     <div data-key="89" class="key">
-      <kbd>Y</kbd>
+      <button type="button"><kbd>Y</kbd></button>
+      <br>
       <span class="sound">Whistle</span>
     </div>
 
     <div data-key="85" class="key">
-      <kbd>U</kbd>
+      <button type="button"><kbd>U</kbd></button>
+      <br>
       <span class="sound">Gunshot</span>
     </div>
 
     <div data-key="73" class="key">
-      <kbd>I</kbd>
+      <button type="button"><kbd>I</kbd></button>
+      <br>
       <span class="sound">Fart</span>
     </div>
 
     <div data-key="79" class="key">
-      <kbd>O</kbd>
+      <button type="button"><kbd>O</kbd></button>
+      <br>
       <span class="sound">Clap</span>
     </div>
 
     <div data-key="80" class="key">
-      <kbd>P</kbd>
+      <button type="button"><kbd>P</kbd></button>
+      <br>
       <span class="sound">Flush</span>
     </div>
   </div> <!-- END top ROW -->
@@ -66,84 +76,100 @@
 
 <div class="row keys"> <!-- START HOME ROW -->
   <div data-key="65" class="key">
-    <kbd>A</kbd>
+    <button type="button"><kbd>A</kbd></button>
+    <br>
     <span class="sound">boom</span>
   </div>
 
   <div data-key="83" class="key">
-    <kbd>S</kbd>
+    <button type="button"><kbd>S</kbd></button>
+    <br>
     <span class="sound">clap</span>
   </div>
 
   <div data-key="68" class="key">
-    <kbd>D</kbd>
+    <button type="button"><kbd>D</kbd></button>
+    <br>
     <span class="sound">hihat</span>
   </div>
 
   <div data-key="70" class="key">
-    <kbd>F</kbd>
+    <button type="button"><kbd>F</kbd></button>
+    <br>
     <span class="sound">kick</span>
   </div>
 
   <div data-key="71" class="key">
-    <kbd>G</kbd>
+    <button type="button"><kbd>G</kbd></button>
+    <br>
     <span class="sound">openhat</span>
   </div>
 
   <div data-key="72" class="key">
-    <kbd>H</kbd>
+    <button type="button"><kbd>H</kbd></button>
+    <br>
     <span class="sound">ride</span>
   </div>
 
   <div data-key="74" class="key">
-    <kbd>J</kbd>
+    <button type="button"><kbd>J</kbd></button>
+    <br>
     <span class="sound">snare</span>
   </div>
 
   <div data-key="75" class="key">
-    <kbd>K</kbd>
+    <button type="button"><kbd>K</kbd></button>
+    <br>
     <span class="sound">tink</span>
   </div>
 
   <div data-key="76" class="key">
-    <kbd>L</kbd>
+    <button type="button"><kbd>L</kbd></button>
+    <br>
     <span class="sound">tom</span>
   </div>
 </div> <!-- END HOME ROW -->
 
 <div class="keys"> <!-- START BOTTOM ROW -->
   <div data-key="90" class="key">
-    <kbd>Z</kbd>
+    <button type="button"><kbd>Z</kbd></button>
+    <br>
     <span class="sound">Laser</span>
   </div>
 
   <div data-key="88" class="key">
-    <kbd>X</kbd>
+    <button type="button"><kbd>X</kbd></button>
+    <br>
     <span class="sound">Downer</span>
   </div>
 
   <div data-key="67" class="key">
-    <kbd>C</kbd>
+    <button type="button"><kbd>C</kbd></button>
+    <br>
     <span class="sound">Yoda</span>
   </div>
 
   <div data-key="86" class="key">
-    <kbd>V</kbd>
+    <button type="button"><kbd>V</kbd></button>
+    <br>
     <span class="sound">Napoleon</span>
   </div>
 
   <div data-key="66" class="key">
-    <kbd>B</kbd>
+    <button type="button"><kbd>B</kbd></button>
+    <br>
     <span class="sound">Light Saber</span>
   </div>
 
   <div data-key="78" class="key">
-    <kbd>N</kbd>
+    <button type="button"><kbd>N</kbd></button>
+    <br>
     <span class="sound">Pac Man</span>
   </div>
 
   <div data-key="77" class="key">
-    <kbd>M</kbd>
+    <button type="button"><kbd>M</kbd></button>
+    <br>
     <span class="sound">Napoleon</span>
   </div>
 
@@ -184,6 +210,8 @@
 <audio data-key="76" src="wav/tom.wav"></audio>
 <!-- END HOME ROW SOUNDS -->
 <script>
+
+<!-- keyboard sounds-->
 window.addEventListener('keydown', function (e) {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -195,12 +223,17 @@ window.addEventListener('keydown', function (e) {
 
 function removeTransition(e) {
   if(e.propertyName !== 'transform') return;
-
   this.classList.remove('playing');
 }
 
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend',removeTransition));
+
+
+
+
+//<!-- BUTTON sounds -->
+//const buttonSound = document.getElementById("r");
 
 </script>
 
